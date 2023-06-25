@@ -11,7 +11,7 @@ app.get("/",function(req,res){
 
 app.post("/",function(req,res){
     const querry = req.body.cityname;
-    const appid = "2d744c86693d3cfae4c1dca41f351352";
+    const appid = "";//api has been removed take it from local
     const unit = "metric";
     const url="https://api.openweathermap.org/data/2.5/weather?q="+querry+"&appid="+appid+"&units="+unit;
 https.get(url,function(response){
@@ -34,7 +34,7 @@ https.get(url,function(response){
 });
 
 
-// const url="https://api.openweathermap.org/data/2.5/weather?q=kolkata&appid=2d744c86693d3cfae4c1dca41f351352&units=metric";
+// const url="https://api.openweathermap.org/data/2.5/weather?q=kolkata&appid="api key has been removed"&units=metric";
 // https.get(url,function(response){
 //     console.log(response.statusCode);
 
